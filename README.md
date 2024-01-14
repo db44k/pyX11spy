@@ -56,6 +56,7 @@ options:
   -p, --print_up        print when keys are released (indicated by parens)
   -w, --window_focus    display changes in remote display's window focus
   -v, --verbose         increase output verbosity (currently not implemented)
+```
 
 ## Example
 
@@ -63,6 +64,12 @@ Begin logging keystrokes in a remote X11 display while printing changes in windo
 ```sh
 python3 pyX11spy.py -t <TARGET_IP> -d <DIPLAY_NO> -f 1.0 s 0.00001 -w
 ```
+
+## Requirements
+
+Just Python3 and  `python-xlib`. (`pip3 install Xlib`)
+
+## References
 
 See the following for more information:
  - Source code to the original `spy` tool - <https://github.com/mnp/xspy/blob/master/xspy.c>
